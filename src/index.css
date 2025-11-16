@@ -1,0 +1,21 @@
+/* איפוס בעיית ה"חצי עמוד" של Vite */
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  /* חשוב: לא Flex ולא place-items */
+  display: block;
+  background: #FFF7F1; /* תואם לפלטה שלנו (אפשר להשאיר/להסיר) */
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #2F2A28;
+}
+
+/* Vite שם בד"כ max-width/center ל-root – נבטל */
+#root {
+  max-width: none !important;
+  padding: 0 !important;
+  text-align: initial !important;
+}
+
+/* לא חובה, אבל מבטיח שהחלק של העמוד תופס רוחב מלא */
+.auth-page { width: 100%; }
